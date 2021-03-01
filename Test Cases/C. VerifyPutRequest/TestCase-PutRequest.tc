@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TestCase-PutRequest</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9770b75f-476b-4a66-883b-f4c9b2d58f7e</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>87a16b5e-0609-4eff-8166-e16f2a9a551e</id>
+      <masked>false</masked>
+      <name>customname</name>
+   </variable>
+</TestCaseEntity>

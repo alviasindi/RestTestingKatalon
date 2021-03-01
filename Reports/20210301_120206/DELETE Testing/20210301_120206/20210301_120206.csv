@@ -1,0 +1,6 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+DELETE Testing,,,,2021-03-01 12:02:08,2021-03-01 12:02:12,3.278s,PASSED
+,,,,,,,
+Test Cases/D. VerifyDeleteRequest/TestCase-DeleteRequest,,,,2021-03-01 12:02:09,2021-03-01 12:02:12,2.384s,PASSED
+"responseGet = sendRequest(findTestObject(""B. GetRequest/GetRequest""))",,,,2021-03-01 12:02:10,2021-03-01 12:02:11,1.187s,PASSED
+"if (verifyResponseStatusCode(responseGet, 200, STOP_ON_FAILURE))",,,,2021-03-01 12:02:11,2021-03-01 12:02:12,0.700s,PASSED

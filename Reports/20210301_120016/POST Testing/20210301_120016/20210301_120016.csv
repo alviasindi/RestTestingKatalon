@@ -1,0 +1,16 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+POST Testing,,,,2021-03-01 12:00:19,2021-03-01 12:00:22,3.519s,PASSED
+,,,,,,,
+Test Cases/A. VerifyPostRequest/TestCase-PostRequest-DynamicData,,,,2021-03-01 12:00:20,2021-03-01 12:00:22,2.712s,PASSED
+uniqueNumber = System.currentTimeMillis() / 1000,,,,2021-03-01 12:00:20,2021-03-01 12:00:20,0.007s,PASSED
+"uniqueEmail = ""alvia"" + uniqueNumber + ""@mailinator.com""",,,,2021-03-01 12:00:20,2021-03-01 12:00:20,0.002s,PASSED
+"stringBody = ""{""email"":"" + uniqueEmail + "",""name"":""alvia"",""status"":""Active"",""gender"":""Female""}""",,,,2021-03-01 12:00:20,2021-03-01 12:00:20,0.001s,PASSED
+"response = sendRequest(findTestObject(""A. PostRequest/PostRequest-DynamicData"", [""emailunique"":uniqueEmail]))",,,,2021-03-01 12:00:20,2021-03-01 12:00:22,1.713s,PASSED
+"out.println(""email yang terbentuk: "" + uniqueEmail)",,,,2021-03-01 12:00:22,2021-03-01 12:00:22,0.010s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,2021-03-01 12:00:22,2021-03-01 12:00:22,0.020s,PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2021-03-01 12:00:22,2021-03-01 12:00:22,0.010s,PASSED
+parsedJson = slurper.parseText(response.getResponseBodyContent()),,,,2021-03-01 12:00:22,2021-03-01 12:00:22,0.027s,PASSED
+println(response.getResponseBodyContent()),,,,2021-03-01 12:00:22,2021-03-01 12:00:22,0.003s,PASSED
+actualEmail = email,,,,2021-03-01 12:00:22,2021-03-01 12:00:22,0.014s,PASSED
+"out.println(""actualEmail: "" + actualEmail)",,,,2021-03-01 12:00:22,2021-03-01 12:00:22,0.001s,PASSED
+assertThat(actualEmail).isEqualTo(uniqueEmail),,,,2021-03-01 12:00:22,2021-03-01 12:00:22,0.298s,PASSED

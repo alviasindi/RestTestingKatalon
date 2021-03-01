@@ -1,0 +1,14 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+PUT Testing,,,,2021-03-01 12:00:41,2021-03-01 12:00:46,4.160s,PASSED
+,,,,,,,
+Test Cases/C. VerifyPutRequest/TestCase-PutRequest,,,,2021-03-01 12:00:43,2021-03-01 12:00:46,2.751s,PASSED
+"customname = ""alviasindi""",,,,2021-03-01 12:00:44,2021-03-01 12:00:44,0.006s,PASSED
+"stringBody = ""{""id"":1307,""email"":""alvia1614552533@mailinator.com"","" + customname + "",""status"":""Active"",""gender"":""Female""}""",,,,2021-03-01 12:00:44,2021-03-01 12:00:44,0.001s,PASSED
+"response = sendRequest(findTestObject(""C. PutRequest/PutRequest"", [""userfullname"":customname]))",,,,2021-03-01 12:00:44,2021-03-01 12:00:45,1.538s,PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2021-03-01 12:00:45,2021-03-01 12:00:45,0.008s,PASSED
+parsedJson = slurper.parseText(response.getResponseBodyContent()),,,,2021-03-01 12:00:45,2021-03-01 12:00:45,0.027s,PASSED
+println(response.getResponseBodyContent()),,,,2021-03-01 12:00:45,2021-03-01 12:00:45,0.003s,PASSED
+editedname = name,,,,2021-03-01 12:00:45,2021-03-01 12:00:45,0.006s,PASSED
+"out.println(""expectedname: "" + editedname)",,,,2021-03-01 12:00:45,2021-03-01 12:00:45,0.012s,PASSED
+"out.println(""name: "" + customname)",,,,2021-03-01 12:00:45,2021-03-01 12:00:45,0.002s,PASSED
+assertThat(editedname).isEqualTo(customname),,,,2021-03-01 12:00:45,2021-03-01 12:00:46,0.348s,PASSED

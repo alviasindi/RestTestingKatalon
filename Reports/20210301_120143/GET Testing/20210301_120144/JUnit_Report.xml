@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="GET Testing" time="3.368" tests="1" failures="0" skips="0" errors="0">
+   <testsuite name="GET Testing" tests="1" failures="0" errors="0" time="3.368" skips="0" timestamp="2021-03-01 12:01:47" hostname="gdn - monikas-mbp" id="Test Suites/GET Testing">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/gdn/Documents/RestTestingKatalon/Reports/20210301_120143/GET Testing/20210301_120144"/>
+         <property name="logFiles" value="/Users/gdn/Documents/RestTestingKatalon/Reports/20210301_120143/GET Testing/20210301_120144/execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="gdn - monikas-mbp"/>
+         <property name="hostAddress" value="192.168.225.199"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="7.9.1.208"/>
+      </properties>
+      <testcase name="Test Cases/B. VerifyGetRequest/TestCase-GetRequest" time="2.002" classname="Test Cases/B. VerifyGetRequest/TestCase-GetRequest" status="PASSED">
+         <system-out><![CDATA[2021-03-01 12:01:48 - [TEST_CASE][PASSED] - Test Cases/B. VerifyGetRequest/TestCase-GetRequest: Test Cases/B. VerifyGetRequest/TestCase-GetRequest
+
+2021-03-01 12:01:49 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("B. GetRequest/GetRequest")): Send request successfully
+
+2021-03-01 12:01:50 - [MESSAGE][INFO] - HAR: /Users/gdn/Documents/RestTestingKatalon/Reports/20210301_120143/GET Testing/20210301_120144/requests/main/0.har
+
+2021-03-01 12:01:50 - [MESSAGE][PASSED] - Send request successfully
+
+2021-03-01 12:01:50 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2021-03-01 12:01:50 - [TEST_STEP][PASSED] - parsedJson = slurper.parseText(response.getResponseBodyContent()): null
+
+2021-03-01 12:01:50 - [TEST_STEP][PASSED] - println(response.getResponseBodyContent()): null
+
+2021-03-01 12:01:50 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2021-03-01 12:01:50 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2021-03-01 12:01:47 - [TEST_SUITE][PASSED] - GET Testing: Test Cases/B. VerifyGetRequest/TestCase-GetRequest]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

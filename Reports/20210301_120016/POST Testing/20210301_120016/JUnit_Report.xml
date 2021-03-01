@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="POST Testing" time="3.889" tests="1" failures="0" skips="0" errors="0">
+   <testsuite name="POST Testing" tests="1" failures="0" errors="0" time="3.889" skips="0" timestamp="2021-03-01 12:00:19" hostname="gdn - monikas-mbp" id="Test Suites/POST Testing">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/gdn/Documents/RestTestingKatalon/Reports/20210301_120016/POST Testing/20210301_120016"/>
+         <property name="logFiles" value="/Users/gdn/Documents/RestTestingKatalon/Reports/20210301_120016/POST Testing/20210301_120016/execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="gdn - monikas-mbp"/>
+         <property name="hostAddress" value="192.168.225.199"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="7.9.1.208"/>
+      </properties>
+      <testcase name="Test Cases/A. VerifyPostRequest/TestCase-PostRequest-DynamicData" time="2.712" classname="Test Cases/A. VerifyPostRequest/TestCase-PostRequest-DynamicData" status="PASSED">
+         <system-out><![CDATA[2021-03-01 12:00:20 - [TEST_CASE][PASSED] - Test Cases/A. VerifyPostRequest/TestCase-PostRequest-DynamicData: Test Cases/A. VerifyPostRequest/TestCase-PostRequest-DynamicData
+
+2021-03-01 12:00:20 - [TEST_STEP][PASSED] - uniqueNumber = System.currentTimeMillis() / 1000: null
+
+2021-03-01 12:00:20 - [TEST_STEP][PASSED] - uniqueEmail = "alvia" + uniqueNumber + "@mailinator.com": null
+
+2021-03-01 12:00:20 - [TEST_STEP][PASSED] - stringBody = "{"email":" + uniqueEmail + ","name":"alvia","status":"Active","gender":"Female"}": null
+
+2021-03-01 12:00:20 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("A. PostRequest/PostRequest-DynamicData", ["emailunique":uniqueEmail])): Send request successfully
+
+2021-03-01 12:00:22 - [MESSAGE][INFO] - HAR: /Users/gdn/Documents/RestTestingKatalon/Reports/20210301_120016/POST Testing/20210301_120016/requests/main/0.har
+
+2021-03-01 12:00:22 - [MESSAGE][PASSED] - Send request successfully
+
+2021-03-01 12:00:22 - [TEST_STEP][PASSED] - out.println("email yang terbentuk: " + uniqueEmail): null
+
+2021-03-01 12:00:22 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2021-03-01 12:00:22 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2021-03-01 12:00:22 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2021-03-01 12:00:22 - [TEST_STEP][PASSED] - parsedJson = slurper.parseText(response.getResponseBodyContent()): null
+
+2021-03-01 12:00:22 - [TEST_STEP][PASSED] - println(response.getResponseBodyContent()): null
+
+2021-03-01 12:00:22 - [TEST_STEP][PASSED] - actualEmail = email: null
+
+2021-03-01 12:00:22 - [TEST_STEP][PASSED] - out.println("actualEmail: " + actualEmail): null
+
+2021-03-01 12:00:22 - [TEST_STEP][PASSED] - assertThat(actualEmail).isEqualTo(uniqueEmail): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2021-03-01 12:00:19 - [TEST_SUITE][PASSED] - POST Testing: Test Cases/A. VerifyPostRequest/TestCase-PostRequest-DynamicData]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

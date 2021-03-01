@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="DELETE Testing" time="3.817" tests="1" failures="0" skips="0" errors="0">
+   <testsuite name="DELETE Testing" tests="1" failures="0" errors="0" time="3.817" skips="0" timestamp="2021-03-01 12:02:08" hostname="gdn - monikas-mbp" id="Test Suites/DELETE Testing">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/gdn/Documents/RestTestingKatalon/Reports/20210301_120206/DELETE Testing/20210301_120206"/>
+         <property name="logFiles" value="/Users/gdn/Documents/RestTestingKatalon/Reports/20210301_120206/DELETE Testing/20210301_120206/execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="gdn - monikas-mbp"/>
+         <property name="hostAddress" value="192.168.225.199"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="7.9.1.208"/>
+      </properties>
+      <testcase name="Test Cases/D. VerifyDeleteRequest/TestCase-DeleteRequest" time="2.384" classname="Test Cases/D. VerifyDeleteRequest/TestCase-DeleteRequest" status="PASSED">
+         <system-out><![CDATA[2021-03-01 12:02:09 - [TEST_CASE][PASSED] - Test Cases/D. VerifyDeleteRequest/TestCase-DeleteRequest: Test Cases/D. VerifyDeleteRequest/TestCase-DeleteRequest
+
+2021-03-01 12:02:10 - [TEST_STEP][PASSED] - responseGet = sendRequest(findTestObject("B. GetRequest/GetRequest")): Send request successfully
+
+2021-03-01 12:02:11 - [MESSAGE][INFO] - HAR: /Users/gdn/Documents/RestTestingKatalon/Reports/20210301_120206/DELETE Testing/20210301_120206/requests/main/0.har
+
+2021-03-01 12:02:11 - [MESSAGE][PASSED] - Send request successfully
+
+2021-03-01 12:02:11 - [TEST_STEP][PASSED] - if (verifyResponseStatusCode(responseGet, 200, STOP_ON_FAILURE)): null
+
+2021-03-01 12:02:11 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2021-03-01 12:02:11 - [TEST_STEP][PASSED] - responseDelete = sendRequest(findTestObject("D. DeleteRequest/DeleteRequest")): Send request successfully
+
+2021-03-01 12:02:12 - [MESSAGE][INFO] - HAR: /Users/gdn/Documents/RestTestingKatalon/Reports/20210301_120206/DELETE Testing/20210301_120206/requests/main/1.har
+
+2021-03-01 12:02:12 - [MESSAGE][PASSED] - Send request successfully
+
+2021-03-01 12:02:12 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2021-03-01 12:02:12 - [TEST_STEP][PASSED] - parsedJson = slurper.parseText(responseDelete.getResponseBodyContent()): null
+
+2021-03-01 12:02:12 - [TEST_STEP][PASSED] - println(responseDelete.getResponseBodyContent()): null
+
+2021-03-01 12:02:12 - [TEST_STEP][PASSED] - verifyResponseStatusCodeInRange(responseDelete, 200, 204): Verify response status code successfully
+
+2021-03-01 12:02:12 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2021-03-01 12:02:08 - [TEST_SUITE][PASSED] - DELETE Testing: Test Cases/D. VerifyDeleteRequest/TestCase-DeleteRequest]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>
